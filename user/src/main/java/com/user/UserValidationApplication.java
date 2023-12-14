@@ -8,6 +8,7 @@ public class UserValidationApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserValidationApplication.class, args);
+		System.out.println("UserValidationApplication Started Successfully..");
 	}
 
 }
