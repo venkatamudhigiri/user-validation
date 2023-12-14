@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.user.entity.Transactions;
 import com.user.exception.InvalidTokenException;
 import com.user.exception.TransactionsNotFoundException;
@@ -49,8 +48,6 @@ public class TransactionsController {
 
 			if (!transactions.isEmpty()) {
 				System.out.println("size " + transactions.size());
-				//ObjectMapper objectMapper = new ObjectMapper();
-				//String jsonString = objectMapper.writeValueAsString(transactions);
 				return ResponseEntity.ok(transactions);
 			}
 
